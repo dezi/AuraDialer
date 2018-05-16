@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    publishNonDefault true
+
+    buildTypes {
+        shadow
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            java.excludes = ['com/google/android/libraries/backup/shadow/**']
+        }
+
+        shadow {
+            java.srcDirs = ['src']
+            java.includes = ['com/google/android/libraries/backup/shadow/**']
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-annotations:27.1.1'
+    shadowImplementation 'junit:junit:4.12'
+    shadowImplementation 'org.robolectric:robolectric:3.1-rc1'
+    shadowImplementation 'org.robolectric:shadows-core:3.1-rc1'
+}
