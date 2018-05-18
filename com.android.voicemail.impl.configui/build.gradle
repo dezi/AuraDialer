@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 27
+    }
+
+    sourceSets {
+        main.res.srcDirs += ['res']
+        main.manifest.srcFile 'AndroidManifest.xml'
+    }
+}

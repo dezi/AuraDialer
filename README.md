@@ -1,2 +1,0 @@
-# AuraDialer
-Aura Dialer

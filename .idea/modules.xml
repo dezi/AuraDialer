@@ -2,8 +2,61 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AuraDialer.iml" filepath="$PROJECT_DIR$/.idea/AuraDialer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AuraDialer3.iml" filepath="$PROJECT_DIR$/AuraDialer3.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.android.common/com.android.common.iml" filepath="$PROJECT_DIR$/com.android.common/com.android.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.contacts.common/com.android.contacts.common.iml" filepath="$PROJECT_DIR$/com.android.contacts.common/com.android.contacts.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer/com.android.dialer.iml" filepath="$PROJECT_DIR$/com.android.dialer/com.android.dialer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.about/com.android.dialer.about.iml" filepath="$PROJECT_DIR$/com.android.dialer.about/com.android.dialer.about.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.app/com.android.dialer.app.iml" filepath="$PROJECT_DIR$/com.android.dialer.app/com.android.dialer.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.app.manifests.activities/com.android.dialer.app.manifests.activities.iml" filepath="$PROJECT_DIR$/com.android.dialer.app.manifests.activities/com.android.dialer.app.manifests.activities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.app.voicemail.error/com.android.dialer.app.voicemail.error.iml" filepath="$PROJECT_DIR$/com.android.dialer.app.voicemail.error/com.android.dialer.app.voicemail.error.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.assetres/com.android.dialer.assetres.iml" filepath="$PROJECT_DIR$/com.android.dialer.assetres/com.android.dialer.assetres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.blocking/com.android.dialer.blocking.iml" filepath="$PROJECT_DIR$/com.android.dialer.blocking/com.android.dialer.blocking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.callcomposer/com.android.dialer.callcomposer.iml" filepath="$PROJECT_DIR$/com.android.dialer.callcomposer/com.android.dialer.callcomposer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.callcomposer.camera.camerafocus/com.android.dialer.callcomposer.camera.camerafocus.iml" filepath="$PROJECT_DIR$/com.android.dialer.callcomposer.camera.camerafocus/com.android.dialer.callcomposer.camera.camerafocus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.callcomposer.cameraui/com.android.dialer.callcomposer.cameraui.iml" filepath="$PROJECT_DIR$/com.android.dialer.callcomposer.cameraui/com.android.dialer.callcomposer.cameraui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.calldetails/com.android.dialer.calldetails.iml" filepath="$PROJECT_DIR$/com.android.dialer.calldetails/com.android.dialer.calldetails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.calllog.ui/com.android.dialer.calllog.ui.iml" filepath="$PROJECT_DIR$/com.android.dialer.calllog.ui/com.android.dialer.calllog.ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.calllogutils/com.android.dialer.calllogutils.iml" filepath="$PROJECT_DIR$/com.android.dialer.calllogutils/com.android.dialer.calllogutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.common/com.android.dialer.common.iml" filepath="$PROJECT_DIR$/com.android.dialer.common/com.android.dialer.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.contactactions/com.android.dialer.contactactions.iml" filepath="$PROJECT_DIR$/com.android.dialer.contactactions/com.android.dialer.contactactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.contactsfragment/com.android.dialer.contactsfragment.iml" filepath="$PROJECT_DIR$/com.android.dialer.contactsfragment/com.android.dialer.contactsfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.dialpadview/com.android.dialer.dialpadview.iml" filepath="$PROJECT_DIR$/com.android.dialer.dialpadview/com.android.dialer.dialpadview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.enrichedcall.simulator/com.android.dialer.enrichedcall.simulator.iml" filepath="$PROJECT_DIR$/com.android.dialer.enrichedcall.simulator/com.android.dialer.enrichedcall.simulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.interactions/com.android.dialer.interactions.iml" filepath="$PROJECT_DIR$/com.android.dialer.interactions/com.android.dialer.interactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.main.impl/com.android.dialer.main.impl.iml" filepath="$PROJECT_DIR$/com.android.dialer.main.impl/com.android.dialer.main.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.notification/com.android.dialer.notification.iml" filepath="$PROJECT_DIR$/com.android.dialer.notification/com.android.dialer.notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.oem/com.android.dialer.oem.iml" filepath="$PROJECT_DIR$/com.android.dialer.oem/com.android.dialer.oem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.phonenumberutil/com.android.dialer.phonenumberutil.iml" filepath="$PROJECT_DIR$/com.android.dialer.phonenumberutil/com.android.dialer.phonenumberutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.postcall/com.android.dialer.postcall.iml" filepath="$PROJECT_DIR$/com.android.dialer.postcall/com.android.dialer.postcall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.searchfragment.common/com.android.dialer.searchfragment.common.iml" filepath="$PROJECT_DIR$/com.android.dialer.searchfragment.common/com.android.dialer.searchfragment.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.searchfragment.list/com.android.dialer.searchfragment.list.iml" filepath="$PROJECT_DIR$/com.android.dialer.searchfragment.list/com.android.dialer.searchfragment.list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.searchfragment.nearbyplaces/com.android.dialer.searchfragment.nearbyplaces.iml" filepath="$PROJECT_DIR$/com.android.dialer.searchfragment.nearbyplaces/com.android.dialer.searchfragment.nearbyplaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.shortcuts/com.android.dialer.shortcuts.iml" filepath="$PROJECT_DIR$/com.android.dialer.shortcuts/com.android.dialer.shortcuts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.speeddial/com.android.dialer.speeddial.iml" filepath="$PROJECT_DIR$/com.android.dialer.speeddial/com.android.dialer.speeddial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.theme/com.android.dialer.theme.iml" filepath="$PROJECT_DIR$/com.android.dialer.theme/com.android.dialer.theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.util/com.android.dialer.util.iml" filepath="$PROJECT_DIR$/com.android.dialer.util/com.android.dialer.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialer.widget/com.android.dialer.widget.iml" filepath="$PROJECT_DIR$/com.android.dialer.widget/com.android.dialer.widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.dialershared.bubble/com.android.dialershared.bubble.iml" filepath="$PROJECT_DIR$/com.android.dialershared.bubble/com.android.dialershared.bubble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui/com.android.incallui.iml" filepath="$PROJECT_DIR$/com.android.incallui/com.android.incallui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.answer.impl/com.android.incallui.answer.impl.iml" filepath="$PROJECT_DIR$/com.android.incallui.answer.impl/com.android.incallui.answer.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.answer.impl.affordance/com.android.incallui.answer.impl.affordance.iml" filepath="$PROJECT_DIR$/com.android.incallui.answer.impl.affordance/com.android.incallui.answer.impl.affordance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.answer.impl.answermethod/com.android.incallui.answer.impl.answermethod.iml" filepath="$PROJECT_DIR$/com.android.incallui.answer.impl.answermethod/com.android.incallui.answer.impl.answermethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.answer.impl.hint/com.android.incallui.answer.impl.hint.iml" filepath="$PROJECT_DIR$/com.android.incallui.answer.impl.hint/com.android.incallui.answer.impl.hint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.audioroute/com.android.incallui.audioroute.iml" filepath="$PROJECT_DIR$/com.android.incallui.audioroute/com.android.incallui.audioroute.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.autoresizetext/com.android.incallui.autoresizetext.iml" filepath="$PROJECT_DIR$/com.android.incallui.autoresizetext/com.android.incallui.autoresizetext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.commontheme/com.android.incallui.commontheme.iml" filepath="$PROJECT_DIR$/com.android.incallui.commontheme/com.android.incallui.commontheme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.contactgrid/com.android.incallui.contactgrid.iml" filepath="$PROJECT_DIR$/com.android.incallui.contactgrid/com.android.incallui.contactgrid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.disconnectdialog/com.android.incallui.disconnectdialog.iml" filepath="$PROJECT_DIR$/com.android.incallui.disconnectdialog/com.android.incallui.disconnectdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.hold/com.android.incallui.hold.iml" filepath="$PROJECT_DIR$/com.android.incallui.hold/com.android.incallui.hold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.incall.impl/com.android.incallui.incall.impl.iml" filepath="$PROJECT_DIR$/com.android.incallui.incall.impl/com.android.incallui.incall.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.sessiondata/com.android.incallui.sessiondata.iml" filepath="$PROJECT_DIR$/com.android.incallui.sessiondata/com.android.incallui.sessiondata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.speakerbuttonlogic/com.android.incallui.speakerbuttonlogic.iml" filepath="$PROJECT_DIR$/com.android.incallui.speakerbuttonlogic/com.android.incallui.speakerbuttonlogic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.telecomeventui/com.android.incallui.telecomeventui.iml" filepath="$PROJECT_DIR$/com.android.incallui.telecomeventui/com.android.incallui.telecomeventui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.video.impl/com.android.incallui.video.impl.iml" filepath="$PROJECT_DIR$/com.android.incallui.video.impl/com.android.incallui.video.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.incallui.video.protocol/com.android.incallui.video.protocol.iml" filepath="$PROJECT_DIR$/com.android.incallui.video.protocol/com.android.incallui.video.protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.voicemail.impl/com.android.voicemail.impl.iml" filepath="$PROJECT_DIR$/com.android.voicemail.impl/com.android.voicemail.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.android.voicemail.impl.configui/com.android.voicemail.impl.configui.iml" filepath="$PROJECT_DIR$/com.android.voicemail.impl.configui/com.android.voicemail.impl.configui.iml" />
       <module fileurl="file://$PROJECT_DIR$/com.google.android.libraries.backup/com.google.android.libraries.backup.iml" filepath="$PROJECT_DIR$/com.google.android.libraries.backup/com.google.android.libraries.backup.iml" />
     </modules>
   </component>

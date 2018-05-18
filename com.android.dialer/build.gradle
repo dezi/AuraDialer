@@ -1,0 +1,253 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId 'com.android.dialer'
+        minSdkVersion 27
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    productFlavors {
+    }
+
+    sourceSets {
+        main.manifest.srcFile 'src/main/AndroidManifest.xml'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    sourceSets {
+        /*
+        main.res.srcDirs += ['src/main/assets/product/res']
+        main.res.srcDirs += ['src/main/assets/quantum/res']
+
+        main.res.srcDirs += ['src/main/java/com/android/contacts/common/res']
+
+        main.res.srcDirs += ['src/main/java/com/android/dialer/about/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/app/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/app/voicemail/error/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/blocking/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/callcomposer/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/callcomposer/camera/camerafocus/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/callcomposer/cameraui/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/calldetails/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/calllog/ui/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/calllogutils/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/common/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/contactactions/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/contactsfragment/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/dialpadview/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/enrichedcall/simulator/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/interactions/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/main/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/notification/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/oem/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/phonenumberutil/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/postcall/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/searchfragment/common/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/searchfragment/list/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/searchfragment/nearbyplaces/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/shortcuts/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/speeddial/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/theme/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/util/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/voicemailstatus/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialer/widget/res']
+        main.res.srcDirs += ['src/main/java/com/android/dialershared/bubble/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/answer/impl/affordance/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/answer/impl/answermethod/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/answer/impl/hint/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/answer/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/audioroute/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/autoresizetext/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/calllocation/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/commontheme/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/contactgrid/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/disconnectdialog/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/hold/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/incall/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/maps/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/sessiondata/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/telecomeventui/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/video/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/incallui/video/protocol/res']
+        main.res.srcDirs += ['src/main/java/com/android/voicemail/impl/res']
+        main.res.srcDirs += ['src/main/java/com/android/voicemail/impl/configui/res']
+        */
+    }
+
+    sourceSets {
+        main.java.srcDirs += "${protobuf.generatedFilesBaseDir}/main/javalite"
+    }
+
+    sourceSets {
+        main {
+            java {
+                exclude 'com/android/incallui/calllocation/impl/AuthException.java'
+                exclude 'com/android/incallui/calllocation/impl/CallLocationImpl.java'
+                exclude 'com/android/incallui/calllocation/impl/CallLocationModule.java'
+                exclude 'com/android/incallui/calllocation/impl/DownloadMapImageTask.java'
+                exclude 'com/android/incallui/calllocation/impl/GoogleLocationSettingHelper.java'
+                exclude 'com/android/incallui/calllocation/impl/HttpFetcher.java'
+                exclude 'com/android/incallui/calllocation/impl/LocationFragment.java'
+                exclude 'com/android/incallui/calllocation/impl/LocationHelper.java'
+                exclude 'com/android/incallui/calllocation/impl/LocationPresenter.java'
+                exclude 'com/android/incallui/calllocation/impl/LocationUrlBuilder.java'
+                exclude 'com/android/incallui/calllocation/impl/ReverseGeocodeTask.java'
+                exclude 'com/android/incallui/calllocation/impl/TrafficStatsTags.java'
+                exclude 'com/android/incallui/maps/impl/MapsImpl.java'
+                exclude 'com/android/incallui/maps/impl/MapsModule.java'
+                exclude 'com/android/incallui/maps/impl/StaticMapFragment.java'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compileOnly 'javax.annotation:jsr250-api:1.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:transition:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support:support-dynamic-animation:27.1.1'
+    implementation 'com.google.guava:guava:22.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.5'
+    implementation 'com.googlecode.libphonenumber:geocoder:2.94'
+    implementation 'commons-io:commons-io:2.4'
+    compileOnly 'com.google.auto.value:auto-value:1.5.2'
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
+    implementation 'com.google.protobuf:protobuf-java:3.5.1'
+    implementation 'com.google.android:android:4.1.1.4'
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'com.google.dagger:dagger-android:2.11'
+    implementation 'com.google.dagger:dagger-android-support:2.11'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'me.leolin:ShortcutBadger:1.1.21'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'org.apache.james:apache-mime4j-core:0.8.2'
+    implementation 'org.apache.james:apache-mime4j-dom:0.8.2'
+    implementation 'io.grpc:grpc-stub:1.12.0'
+    implementation 'io.grpc:grpc-okhttp:1.12.0'
+    implementation 'io.grpc:grpc-protobuf:1.12.0'
+    implementation project(':com.android.common')
+    implementation project(':com.android.contacts.common')
+    implementation project(':com.android.dialer.about')
+    implementation project(':com.android.dialer.app')
+    implementation project(':com.android.dialer.app.manifests.activities')
+    implementation project(':com.android.dialer.app.voicemail.error')
+    implementation project(':com.android.dialer.assetres')
+    implementation project(':com.android.dialer.blocking')
+    implementation project(':com.android.dialer.callcomposer')
+    implementation project(':com.android.dialer.callcomposer.camera.camerafocus')
+    implementation project(':com.android.dialer.callcomposer.cameraui')
+    implementation project(':com.android.dialer.calldetails')
+    implementation project(':com.android.dialer.calllog.ui')
+    implementation project(':com.android.dialer.calllogutils')
+    implementation project(':com.android.dialer.common')
+    implementation project(':com.android.dialer.contactactions')
+    implementation project(':com.android.dialer.contactsfragment')
+    implementation project(':com.android.dialer.dialpadview')
+    implementation project(':com.android.dialer.enrichedcall.simulator')
+    implementation project(':com.android.dialer.interactions')
+    implementation project(':com.android.dialer.main.impl')
+    implementation project(':com.android.dialer.notification')
+    implementation project(':com.android.dialer.oem')
+    implementation project(':com.android.dialer.phonenumberutil')
+    implementation project(':com.android.dialer.postcall')
+    implementation project(':com.android.dialer.searchfragment.common')
+    implementation project(':com.android.dialer.searchfragment.list')
+    implementation project(':com.android.dialer.searchfragment.nearbyplaces')
+    implementation project(':com.android.dialer.shortcuts')
+    implementation project(':com.android.dialer.speeddial')
+    implementation project(':com.android.dialer.util')
+    implementation project(':com.android.dialer.theme')
+    implementation project(':com.android.dialer.widget')
+    implementation project(':com.android.dialershared.bubble')
+    implementation project(':com.android.incallui')
+    implementation project(':com.android.incallui.answer.impl')
+    implementation project(':com.android.incallui.answer.impl.affordance')
+    implementation project(':com.android.incallui.answer.impl.answermethod')
+    implementation project(':com.android.incallui.answer.impl.hint')
+    implementation project(':com.android.incallui.audioroute')
+    implementation project(':com.android.incallui.autoresizetext')
+    implementation project(':com.android.incallui.commontheme')
+    implementation project(':com.android.incallui.contactgrid')
+    implementation project(':com.android.incallui.disconnectdialog')
+    implementation project(':com.android.incallui.incall.impl')
+    implementation project(':com.android.incallui.hold')
+    implementation project(':com.android.incallui.sessiondata')
+    implementation project(':com.android.incallui.speakerbuttonlogic')
+    implementation project(':com.android.incallui.telecomeventui')
+    implementation project(':com.android.incallui.video.impl')
+    implementation project(':com.android.incallui.video.protocol')
+    implementation project(':com.android.voicemail.impl')
+    implementation project(':com.android.voicemail.impl.configui')
+    implementation project(':com.google.android.libraries.backup')
+}
+
+protobuf {
+    protoc {
+        // You still need protoc like in the non-Android case
+        artifact = 'com.google.protobuf:protoc:3.0.0'
+    }
+    plugins {
+        javalite {
+            // The codegen for lite comes as a separate artifact
+            artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
+        }
+    }
+    generateProtoTasks {
+
+        all().each { task ->
+            task.builtins {
+                // In most cases you don't need the full Java output
+                // if you use the lite output.
+                remove java
+            }
+            task.plugins {
+                javalite { }
+            }
+        }
+    }
+}
+

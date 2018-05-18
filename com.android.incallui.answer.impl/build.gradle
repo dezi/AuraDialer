@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 27
+    }
+
+    sourceSets {
+        main.res.srcDirs += ['res']
+        main.manifest.srcFile 'AndroidManifest.xml'
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:design:27.1.1'
+
+    implementation project(':com.android.dialer.theme')
+    implementation project(':com.android.dialer.assetres')
+    implementation project(':com.android.incallui.contactgrid')
+}
