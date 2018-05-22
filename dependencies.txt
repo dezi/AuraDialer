@@ -1,0 +1,3119 @@
+The com.google.protobuf plugin was already applied to the project: :com.android.dialer and will not be applied again after plugin: android
+publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+:com.android.dialer:dependencies
+
+------------------------------------------------------------
+Project :com.android.dialer
+------------------------------------------------------------
+
+androidTestAnnotationProcessor - Classpath for the annotation processor for 'androidTest'. (n)
+No dependencies
+
+androidTestApi - API dependencies for 'androidTest' sources. (n)
+No dependencies
+
+androidTestApk - Apk dependencies for 'androidTest' sources (deprecated: use 'androidTestRuntimeOnly' instead). (n)
+No dependencies
+
+androidTestCompile - Compile dependencies for 'androidTest' sources (deprecated: use 'androidTestImplementation' instead). (n)
+No dependencies
+
+androidTestCompileOnly - Compile only dependencies for 'androidTest' sources. (n)
+No dependencies
+
+androidTestDebugAnnotationProcessor - Classpath for the annotation processor for 'androidTestDebug'. (n)
+No dependencies
+
+androidTestDebugApi - API dependencies for 'androidTestDebug' sources. (n)
+No dependencies
+
+androidTestDebugApk - Apk dependencies for 'androidTestDebug' sources (deprecated: use 'androidTestDebugRuntimeOnly' instead). (n)
+No dependencies
+
+androidTestDebugCompile - Compile dependencies for 'androidTestDebug' sources (deprecated: use 'androidTestDebugImplementation' instead). (n)
+No dependencies
+
+androidTestDebugCompileOnly - Compile only dependencies for 'androidTestDebug' sources. (n)
+No dependencies
+
+androidTestDebugImplementation - Implementation only dependencies for 'androidTestDebug' sources. (n)
+No dependencies
+
+androidTestDebugProtobuf
+No dependencies
+
+androidTestDebugProvided - Provided dependencies for 'androidTestDebug' sources (deprecated: use 'androidTestDebugCompileOnly' instead). (n)
+No dependencies
+
+androidTestDebugRuntimeOnly - Runtime only dependencies for 'androidTestDebug' sources. (n)
+No dependencies
+
+androidTestDebugWearApp - Link to a wear app to embed for object 'androidTestDebug'. (n)
+No dependencies
+
+androidTestImplementation - Implementation only dependencies for 'androidTest' sources. (n)
++--- com.android.support.test:runner:1.0.2 (n)
+\--- com.android.support.test.espresso:espresso-core:3.0.2 (n)
+
+androidTestProtobuf
+No dependencies
+
+androidTestProvided - Provided dependencies for 'androidTest' sources (deprecated: use 'androidTestCompileOnly' instead). (n)
+No dependencies
+
+androidTestRuntimeOnly - Runtime only dependencies for 'androidTest' sources. (n)
+No dependencies
+
+androidTestUtil - Additional APKs used during instrumentation testing.
+No dependencies
+
+androidTestWearApp - Link to a wear app to embed for object 'androidTest'. (n)
+No dependencies
+
+annotationProcessor - Classpath for the annotation processor for 'main'. (n)
++--- com.google.auto.value:auto-value:1.5.2 (n)
++--- com.google.dagger:dagger-android-processor:2.11 (n)
++--- com.google.dagger:dagger-compiler:2.11 (n)
+\--- com.github.bumptech.glide:compiler:4.7.1 (n)
+
+api - API dependencies for 'main' sources. (n)
+No dependencies
+
+apk - Apk dependencies for 'main' sources (deprecated: use 'runtimeOnly' instead). (n)
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Compile dependencies for 'main' sources (deprecated: use 'implementation' instead).
+No dependencies
+
+compileOnly - Compile only dependencies for 'main' sources. (n)
++--- javax.annotation:jsr250-api:1.0 (n)
+\--- com.google.auto.value:auto-value:1.5.2 (n)
+
+debugAndroidTestAnnotationProcessorClasspath - Resolved configuration for annotation-processor for variant: debugAndroidTest
+No dependencies
+
+debugAndroidTestCompileClasspath - Resolved configuration for compilation for variant: debugAndroidTest
++--- com.android.support.test:runner:1.0.2
+|    +--- com.android.support:support-annotations:27.1.1
+|    +--- com.android.support.test:monitor:1.0.2
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- junit:junit:4.12
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    \--- net.sf.kxml:kxml2:2.3.0
++--- com.android.support.test.espresso:espresso-core:3.0.2
+|    +--- com.android.support.test:runner:1.0.2 (*)
+|    +--- com.android.support.test.espresso:espresso-idling-resource:3.0.2
+|    +--- com.squareup:javawriter:2.1.1
+|    +--- javax.inject:javax.inject:1
+|    +--- org.hamcrest:hamcrest-library:1.3
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.hamcrest:hamcrest-integration:1.3
+|    |    \--- org.hamcrest:hamcrest-library:1.3 (*)
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking
++--- project :com.android.dialer.callcomposer
++--- project :com.android.dialer.callcomposer.camera.camerafocus
++--- project :com.android.dialer.callcomposer.cameraui
++--- project :com.android.dialer.calldetails
++--- project :com.android.dialer.calllog.ui
++--- project :com.android.dialer.calllogutils
++--- project :com.android.dialer.common
++--- project :com.android.dialer.contactactions
++--- project :com.android.dialer.contactsfragment
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
++--- project :com.android.dialer.postcall
++--- project :com.android.dialer.searchfragment.common
++--- project :com.android.dialer.searchfragment.list
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget
++--- project :com.android.dialershared.bubble
++--- project :com.android.incallui
++--- project :com.android.incallui.answer.impl
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl
++--- project :com.android.incallui.hold
++--- project :com.android.incallui.sessiondata
++--- project :com.android.incallui.speakerbuttonlogic
++--- project :com.android.incallui.telecomeventui
++--- project :com.android.incallui.video.impl
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+
+debugAndroidTestProtobuf
+No dependencies
+
+debugAndroidTestRuntimeClasspath - Resolved configuration for runtime for variant: debugAndroidTest
++--- com.android.support.test:runner:1.0.2
+|    +--- com.android.support:support-annotations:27.1.1
+|    +--- com.android.support.test:monitor:1.0.2
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- junit:junit:4.12
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    \--- net.sf.kxml:kxml2:2.3.0
++--- com.android.support.test.espresso:espresso-core:3.0.2
+|    +--- com.android.support.test:runner:1.0.2 (*)
+|    +--- com.android.support.test.espresso:espresso-idling-resource:3.0.2
+|    +--- com.squareup:javawriter:2.1.1
+|    +--- javax.inject:javax.inject:1
+|    +--- org.hamcrest:hamcrest-library:1.3
+|    |    \--- org.hamcrest:hamcrest-core:1.3
+|    +--- org.hamcrest:hamcrest-integration:1.3
+|    |    \--- org.hamcrest:hamcrest-library:1.3 (*)
+|    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.1
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
+|    +--- project :com.android.dialer.theme
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget
+|    |         +--- project :com.android.dialer.assetres
+|    |         \--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.util
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking (*)
++--- project :com.android.dialer.callcomposer
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.callcomposer.cameraui
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.camera.camerafocus
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.cameraui (*)
++--- project :com.android.dialer.calldetails
+|    \--- project :com.android.dialer.calllogutils
+|         +--- project :com.android.dialer.theme
+|         +--- project :com.android.dialer.assetres
+|         +--- project :com.android.dialer.dialpadview
+|         \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllog.ui
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllogutils (*)
++--- project :com.android.dialer.common
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.contactactions
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.contactsfragment
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.postcall
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.searchfragment.common
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.searchfragment.list
+|    +--- project :com.android.dialer.searchfragment.common (*)
+|    \--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util (*)
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget (*)
++--- project :com.android.dialershared.bubble
+|    \--- com.android.support:appcompat-v7:27.1.1 (*)
++--- project :com.android.incallui
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.incallui.incall.impl
+|    |    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.incallui.commontheme
+|    |    \--- project :com.android.incallui.contactgrid
+|    |         \--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.video.protocol
++--- project :com.android.incallui.answer.impl
+|    +--- com.android.support:design:27.1.1 (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl (*)
++--- project :com.android.incallui.hold
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.sessiondata
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.speakerbuttonlogic
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.telecomeventui
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.video.impl
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+     \--- com.android.support:support-annotations:27.1.1
+
+debugAnnotationProcessor - Classpath for the annotation processor for 'debug'. (n)
+No dependencies
+
+debugAnnotationProcessorClasspath - Resolved configuration for annotation-processor for variant: debug
++--- com.google.auto.value:auto-value:1.5.2
++--- com.google.dagger:dagger-android-processor:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.dagger:dagger-android-jarimpl:2.11
+|    +--- com.google.dagger:dagger-android-support-jarimpl:2.11
+|    +--- com.google.googlejavaformat:google-java-format:1.3
+|    |    +--- com.google.guava:guava:19.0 -> 21.0
+|    |    \--- com.google.errorprone:javac:9-dev-r3297-1-shaded
+|    +--- com.google.guava:guava:21.0
+|    \--- com.squareup:javapoet:1.7.0
++--- com.google.dagger:dagger-compiler:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-producers:2.11
+|    |    +--- com.google.dagger:dagger:2.11 (*)
+|    |    +--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.google.guava:guava:21.0
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.google.googlejavaformat:google-java-format:1.3 (*)
+|    +--- com.google.guava:guava:21.0
+|    +--- com.squareup:javapoet:1.7.0
+|    \--- javax.inject:javax.inject:1
+\--- com.github.bumptech.glide:compiler:4.7.1
+     \--- com.github.bumptech.glide:annotations:4.7.1
+
+debugApi - API dependencies for 'debug' sources. (n)
+No dependencies
+
+debugApiElements - API elements for debug (n)
+No dependencies
+
+debugApk - Apk dependencies for 'debug' sources (deprecated: use 'debugRuntimeOnly' instead). (n)
+No dependencies
+
+debugBundleElements - Bundle elements for debug (n)
+No dependencies
+
+debugCompile - Compile dependencies for 'debug' sources (deprecated: use 'debugImplementation' instead). (n)
+No dependencies
+
+debugCompileClasspath - Resolved configuration for compilation for variant: debug
++--- javax.annotation:jsr250-api:1.0
++--- com.google.auto.value:auto-value:1.5.2
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking
++--- project :com.android.dialer.callcomposer
++--- project :com.android.dialer.callcomposer.camera.camerafocus
++--- project :com.android.dialer.callcomposer.cameraui
++--- project :com.android.dialer.calldetails
++--- project :com.android.dialer.calllog.ui
++--- project :com.android.dialer.calllogutils
++--- project :com.android.dialer.common
++--- project :com.android.dialer.contactactions
++--- project :com.android.dialer.contactsfragment
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
++--- project :com.android.dialer.postcall
++--- project :com.android.dialer.searchfragment.common
++--- project :com.android.dialer.searchfragment.list
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget
++--- project :com.android.dialershared.bubble
++--- project :com.android.incallui
++--- project :com.android.incallui.answer.impl
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl
++--- project :com.android.incallui.hold
++--- project :com.android.incallui.sessiondata
++--- project :com.android.incallui.speakerbuttonlogic
++--- project :com.android.incallui.telecomeventui
++--- project :com.android.incallui.video.impl
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+
+debugCompileOnly - Compile only dependencies for 'debug' sources. (n)
+No dependencies
+
+debugImplementation - Implementation only dependencies for 'debug' sources. (n)
+No dependencies
+
+debugMetadataElements - Metadata elements for debug (n)
+No dependencies
+
+debugProtobuf
+No dependencies
+
+debugProvided - Provided dependencies for 'debug' sources (deprecated: use 'debugCompileOnly' instead). (n)
+No dependencies
+
+debugRuntimeClasspath - Resolved configuration for runtime for variant: debug
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
+|    +--- project :com.android.dialer.theme
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget
+|    |         +--- project :com.android.dialer.assetres
+|    |         \--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.util
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking (*)
++--- project :com.android.dialer.callcomposer
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.callcomposer.cameraui
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.camera.camerafocus
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.cameraui (*)
++--- project :com.android.dialer.calldetails
+|    \--- project :com.android.dialer.calllogutils
+|         +--- project :com.android.dialer.theme
+|         +--- project :com.android.dialer.assetres
+|         +--- project :com.android.dialer.dialpadview
+|         \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllog.ui
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllogutils (*)
++--- project :com.android.dialer.common
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.contactactions
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.contactsfragment
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.postcall
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.searchfragment.common
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.searchfragment.list
+|    +--- project :com.android.dialer.searchfragment.common (*)
+|    \--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util (*)
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget (*)
++--- project :com.android.dialershared.bubble
+|    \--- com.android.support:appcompat-v7:27.1.1 (*)
++--- project :com.android.incallui
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.incallui.incall.impl
+|    |    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.incallui.commontheme
+|    |    \--- project :com.android.incallui.contactgrid
+|    |         \--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.video.protocol
++--- project :com.android.incallui.answer.impl
+|    +--- com.android.support:design:27.1.1 (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl (*)
++--- project :com.android.incallui.hold
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.sessiondata
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.speakerbuttonlogic
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.telecomeventui
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.video.impl
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+     \--- com.android.support:support-annotations:27.1.1
+
+debugRuntimeElements - Runtime elements for debug (n)
+No dependencies
+
+debugRuntimeOnly - Runtime only dependencies for 'debug' sources. (n)
+No dependencies
+
+debugUnitTestAnnotationProcessorClasspath - Resolved configuration for annotation-processor for variant: debugUnitTest
+No dependencies
+
+debugUnitTestCompileClasspath - Resolved configuration for compilation for variant: debugUnitTest
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking
++--- project :com.android.dialer.callcomposer
++--- project :com.android.dialer.callcomposer.camera.camerafocus
++--- project :com.android.dialer.callcomposer.cameraui
++--- project :com.android.dialer.calldetails
++--- project :com.android.dialer.calllog.ui
++--- project :com.android.dialer.calllogutils
++--- project :com.android.dialer.common
++--- project :com.android.dialer.contactactions
++--- project :com.android.dialer.contactsfragment
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
++--- project :com.android.dialer.postcall
++--- project :com.android.dialer.searchfragment.common
++--- project :com.android.dialer.searchfragment.list
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget
++--- project :com.android.dialershared.bubble
++--- project :com.android.incallui
++--- project :com.android.incallui.answer.impl
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl
++--- project :com.android.incallui.hold
++--- project :com.android.incallui.sessiondata
++--- project :com.android.incallui.speakerbuttonlogic
++--- project :com.android.incallui.telecomeventui
++--- project :com.android.incallui.video.impl
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
++--- project :com.google.android.libraries.backup
+\--- junit:junit:4.12
+     \--- org.hamcrest:hamcrest-core:1.3
+
+debugUnitTestRuntimeClasspath - Resolved configuration for runtime for variant: debugUnitTest
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
+|    +--- project :com.android.dialer.theme
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget
+|    |         +--- project :com.android.dialer.assetres
+|    |         \--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.util
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking (*)
++--- project :com.android.dialer.callcomposer
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.callcomposer.cameraui
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.camera.camerafocus
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.cameraui (*)
++--- project :com.android.dialer.calldetails
+|    \--- project :com.android.dialer.calllogutils
+|         +--- project :com.android.dialer.theme
+|         +--- project :com.android.dialer.assetres
+|         +--- project :com.android.dialer.dialpadview
+|         \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllog.ui
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllogutils (*)
++--- project :com.android.dialer.common
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.contactactions
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.contactsfragment
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.postcall
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.searchfragment.common
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.searchfragment.list
+|    +--- project :com.android.dialer.searchfragment.common (*)
+|    \--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util (*)
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget (*)
++--- project :com.android.dialershared.bubble
+|    \--- com.android.support:appcompat-v7:27.1.1 (*)
++--- project :com.android.incallui
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.incallui.incall.impl
+|    |    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.incallui.commontheme
+|    |    \--- project :com.android.incallui.contactgrid
+|    |         \--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.video.protocol
++--- project :com.android.incallui.answer.impl
+|    +--- com.android.support:design:27.1.1 (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl (*)
++--- project :com.android.incallui.hold
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.sessiondata
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.speakerbuttonlogic
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.telecomeventui
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.video.impl
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
++--- project :com.google.android.libraries.backup
+|    \--- com.android.support:support-annotations:27.1.1
+\--- junit:junit:4.12
+     \--- org.hamcrest:hamcrest-core:1.3
+
+debugWearApp - Link to a wear app to embed for object 'debug'. (n)
+No dependencies
+
+debugWearBundling - Resolved Configuration for wear app bundling for variant: debug
+No dependencies
+
+default - Configuration for default artifacts.
+No dependencies
+
+implementation - Implementation only dependencies for 'main' sources. (n)
++--- unspecified (n)
++--- com.android.support:design:27.1.1 (n)
++--- com.android.support:transition:27.1.1 (n)
++--- com.android.support:support-v4:27.1.1 (n)
++--- com.android.support:cardview-v7:27.1.1 (n)
++--- com.android.support:appcompat-v7:27.1.1 (n)
++--- com.android.support:recyclerview-v7:27.1.1 (n)
++--- com.android.support:support-v13:27.1.1 (n)
++--- com.android.support:support-annotations:27.1.1 (n)
++--- com.android.support:support-dynamic-animation:27.1.1 (n)
++--- com.google.guava:guava:22.0 (n)
++--- com.google.android.gms:play-services-maps:15.0.1 (n)
++--- com.google.android.gms:play-services-location:15.0.1 (n)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5 (n)
++--- com.googlecode.libphonenumber:geocoder:2.94 (n)
++--- commons-io:commons-io:2.4 (n)
++--- com.google.protobuf:protobuf-lite:3.0.1 (n)
++--- com.google.android:android:4.1.1.4 (n)
++--- javax.inject:javax.inject:1 (n)
++--- com.google.dagger:dagger-android:2.11 (n)
++--- com.google.dagger:dagger-android-support:2.11 (n)
++--- com.github.bumptech.glide:glide:4.7.1 (n)
++--- me.leolin:ShortcutBadger:1.1.21 (n)
++--- com.android.volley:volley:1.1.0 (n)
++--- org.apache.james:apache-mime4j-core:0.8.2 (n)
++--- org.apache.james:apache-mime4j-dom:0.8.2 (n)
++--- io.grpc:grpc-stub:1.12.0 (n)
++--- io.grpc:grpc-okhttp:1.12.0 (n)
++--- io.grpc:grpc-protobuf-lite:1.12.0 (n)
++--- project com.android.common (n)
++--- project com.android.contacts.common (n)
++--- project com.android.dialer.about (n)
++--- project com.android.dialer.app (n)
++--- project com.android.dialer.app.manifests.activities (n)
++--- project com.android.dialer.app.voicemail.error (n)
++--- project com.android.dialer.assetres (n)
++--- project com.android.dialer.blocking (n)
++--- project com.android.dialer.callcomposer (n)
++--- project com.android.dialer.callcomposer.camera.camerafocus (n)
++--- project com.android.dialer.callcomposer.cameraui (n)
++--- project com.android.dialer.calldetails (n)
++--- project com.android.dialer.calllog.ui (n)
++--- project com.android.dialer.calllogutils (n)
++--- project com.android.dialer.common (n)
++--- project com.android.dialer.contactactions (n)
++--- project com.android.dialer.contactsfragment (n)
++--- project com.android.dialer.dialpadview (n)
++--- project com.android.dialer.enrichedcall.simulator (n)
++--- project com.android.dialer.interactions (n)
++--- project com.android.dialer.main.impl (n)
++--- project com.android.dialer.notification (n)
++--- project com.android.dialer.oem (n)
++--- project com.android.dialer.phonenumberutil (n)
++--- project com.android.dialer.postcall (n)
++--- project com.android.dialer.searchfragment.common (n)
++--- project com.android.dialer.searchfragment.list (n)
++--- project com.android.dialer.searchfragment.nearbyplaces (n)
++--- project com.android.dialer.shortcuts (n)
++--- project com.android.dialer.speeddial (n)
++--- project com.android.dialer.util (n)
++--- project com.android.dialer.theme (n)
++--- project com.android.dialer.widget (n)
++--- project com.android.dialershared.bubble (n)
++--- project com.android.incallui (n)
++--- project com.android.incallui.answer.impl (n)
++--- project com.android.incallui.answer.impl.affordance (n)
++--- project com.android.incallui.answer.impl.answermethod (n)
++--- project com.android.incallui.answer.impl.hint (n)
++--- project com.android.incallui.audioroute (n)
++--- project com.android.incallui.autoresizetext (n)
++--- project com.android.incallui.commontheme (n)
++--- project com.android.incallui.contactgrid (n)
++--- project com.android.incallui.disconnectdialog (n)
++--- project com.android.incallui.incall.impl (n)
++--- project com.android.incallui.hold (n)
++--- project com.android.incallui.sessiondata (n)
++--- project com.android.incallui.speakerbuttonlogic (n)
++--- project com.android.incallui.telecomeventui (n)
++--- project com.android.incallui.video.impl (n)
++--- project com.android.incallui.video.protocol (n)
++--- project com.android.voicemail.impl (n)
++--- project com.android.voicemail.impl.configui (n)
+\--- project com.google.android.libraries.backup (n)
+
+lintChecks - Configuration to apply external lint check jar
+No dependencies
+
+lintClassPath - The lint embedded classpath
+\--- com.android.tools.lint:lint-gradle:26.1.2
+     +--- com.android.tools:sdk-common:26.1.2
+     |    +--- com.android.tools:sdklib:26.1.2
+     |    |    +--- com.android.tools.layoutlib:layoutlib-api:26.1.2
+     |    |    |    +--- com.android.tools:common:26.1.2
+     |    |    |    |    +--- com.android.tools:annotations:26.1.2
+     |    |    |    |    \--- com.google.guava:guava:22.0
+     |    |    |    |         +--- com.google.code.findbugs:jsr305:1.3.9
+     |    |    |    |         +--- com.google.errorprone:error_prone_annotations:2.0.18
+     |    |    |    |         +--- com.google.j2objc:j2objc-annotations:1.1
+     |    |    |    |         \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+     |    |    |    +--- net.sf.kxml:kxml2:2.3.0
+     |    |    |    +--- com.android.tools:annotations:26.1.2
+     |    |    |    \--- org.jetbrains:annotations:13.0
+     |    |    +--- com.android.tools:dvlib:26.1.2
+     |    |    |    \--- com.android.tools:common:26.1.2 (*)
+     |    |    +--- com.android.tools:repository:26.1.2
+     |    |    |    +--- com.android.tools:common:26.1.2 (*)
+     |    |    |    +--- com.sun.activation:javax.activation:1.2.0
+     |    |    |    +--- org.apache.commons:commons-compress:1.12
+     |    |    |    +--- org.glassfish.jaxb:jaxb-runtime:2.2.11
+     |    |    |    |    +--- org.glassfish.jaxb:jaxb-core:2.2.11
+     |    |    |    |    |    +--- javax.xml.bind:jaxb-api:2.2.12-b140109.1041
+     |    |    |    |    |    +--- org.glassfish.jaxb:txw2:2.2.11
+     |    |    |    |    |    \--- com.sun.istack:istack-commons-runtime:2.21
+     |    |    |    |    +--- org.jvnet.staxex:stax-ex:1.7.7
+     |    |    |    |    \--- com.sun.xml.fastinfoset:FastInfoset:1.2.13
+     |    |    |    +--- com.google.jimfs:jimfs:1.1
+     |    |    |    |    \--- com.google.guava:guava:18.0 -> 22.0 (*)
+     |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0
+     |    |    |         +--- org.jetbrains.kotlin:kotlin-stdlib:1.2.0
+     |    |    |         |    \--- org.jetbrains:annotations:13.0
+     |    |    |         \--- org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.0
+     |    |    |              \--- org.jetbrains.kotlin:kotlin-stdlib:1.2.0 (*)
+     |    |    +--- com.google.code.gson:gson:2.7
+     |    |    +--- org.apache.commons:commons-compress:1.12
+     |    |    +--- org.apache.httpcomponents:httpclient:4.2.6
+     |    |    |    +--- org.apache.httpcomponents:httpcore:4.2.5
+     |    |    |    +--- commons-logging:commons-logging:1.1.1
+     |    |    |    \--- commons-codec:commons-codec:1.6
+     |    |    \--- org.apache.httpcomponents:httpmime:4.1
+     |    |         +--- org.apache.httpcomponents:httpcore:4.1 -> 4.2.5
+     |    |         \--- commons-logging:commons-logging:1.1.1
+     |    +--- com.android.tools.build:builder-test-api:3.1.2
+     |    |    \--- com.android.tools.ddms:ddmlib:26.1.2
+     |    |         +--- com.android.tools:common:26.1.2 (*)
+     |    |         \--- net.sf.kxml:kxml2:2.3.0
+     |    +--- com.android.tools.build:builder-model:3.1.2
+     |    |    \--- com.android.tools:annotations:26.1.2
+     |    +--- com.android.tools.ddms:ddmlib:26.1.2 (*)
+     |    +--- org.bouncycastle:bcpkix-jdk15on:1.56
+     |    |    \--- org.bouncycastle:bcprov-jdk15on:1.56
+     |    +--- org.bouncycastle:bcprov-jdk15on:1.56
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib:1.2.0 (*)
+     |    \--- com.google.protobuf:protobuf-java:3.4.0
+     +--- com.android.tools.build:builder:3.1.2
+     |    +--- com.android.tools.build:builder-model:3.1.2 (*)
+     |    +--- com.android.tools.build:builder-test-api:3.1.2 (*)
+     |    +--- com.android.tools:sdklib:26.1.2 (*)
+     |    +--- com.android.tools:sdk-common:26.1.2 (*)
+     |    +--- com.android.tools:common:26.1.2 (*)
+     |    +--- com.android.tools.build:manifest-merger:26.1.2
+     |    |    +--- com.android.tools:common:26.1.2 (*)
+     |    |    +--- com.android.tools:sdklib:26.1.2 (*)
+     |    |    +--- com.android.tools:sdk-common:26.1.2 (*)
+     |    |    +--- com.google.code.gson:gson:2.7
+     |    |    +--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    |    \--- net.sf.kxml:kxml2:2.3.0
+     |    +--- com.android.tools.ddms:ddmlib:26.1.2 (*)
+     |    +--- com.android.tools.analytics-library:protos:26.1.2
+     |    |    \--- com.google.protobuf:protobuf-java:3.4.0
+     |    +--- com.android.tools.analytics-library:shared:26.1.2
+     |    |    +--- com.android.tools.analytics-library:protos:26.1.2 (*)
+     |    |    +--- com.android.tools:annotations:26.1.2
+     |    |    +--- com.android.tools:common:26.1.2 (*)
+     |    |    +--- com.google.guava:guava:22.0 (*)
+     |    |    \--- com.google.code.gson:gson:2.7
+     |    +--- com.android.tools.analytics-library:tracker:26.1.2
+     |    |    +--- com.android.tools:annotations:26.1.2
+     |    |    +--- com.android.tools:common:26.1.2 (*)
+     |    |    +--- com.android.tools.analytics-library:protos:26.1.2 (*)
+     |    |    +--- com.android.tools.analytics-library:shared:26.1.2 (*)
+     |    |    +--- com.google.protobuf:protobuf-java:3.4.0
+     |    |    \--- com.google.guava:guava:22.0 (*)
+     |    +--- com.android.tools.build:apksig:3.1.2
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    +--- com.squareup:javawriter:2.5.0
+     |    +--- org.bouncycastle:bcpkix-jdk15on:1.56 (*)
+     |    +--- org.bouncycastle:bcprov-jdk15on:1.56
+     |    +--- org.ow2.asm:asm:5.1
+     |    +--- org.ow2.asm:asm-tree:5.1
+     |    |    \--- org.ow2.asm:asm:5.1
+     |    +--- org.ow2.asm:asm-commons:5.1
+     |    |    \--- org.ow2.asm:asm-tree:5.1 (*)
+     |    +--- org.ow2.asm:asm-util:5.1
+     |    |    \--- org.ow2.asm:asm-tree:5.1 (*)
+     |    +--- it.unimi.dsi:fastutil:7.2.0
+     |    +--- net.sf.jopt-simple:jopt-simple:4.9
+     |    \--- com.googlecode.json-simple:json-simple:1.1
+     +--- com.android.tools.build:builder-model:3.1.2 (*)
+     +--- com.android.tools.external.com-intellij:intellij-core:26.1.2
+     |    \--- org.jetbrains.trove4j:trove4j:20160824
+     +--- com.android.tools.external.org-jetbrains:uast:26.1.2
+     +--- com.android.tools.build:manifest-merger:26.1.2 (*)
+     +--- com.android.tools.lint:lint:26.1.2
+     |    +--- com.android.tools.lint:lint-checks:26.1.2
+     |    |    +--- com.android.tools.lint:lint-api:26.1.2
+     |    |    |    +--- com.android.tools:sdk-common:26.1.2 (*)
+     |    |    |    +--- com.android.tools.build:builder-model:3.1.2 (*)
+     |    |    |    +--- com.google.guava:guava:22.0 (*)
+     |    |    |    +--- com.android.tools.lint:lint-kotlin:26.1.2
+     |    |    |    |    +--- com.android.tools.external.com-intellij:intellij-core:26.1.2 (*)
+     |    |    |    |    +--- com.android.tools.external.com-intellij:kotlin-compiler:26.1.2
+     |    |    |    |    +--- com.android.tools.external.org-jetbrains:uast:26.1.2
+     |    |    |    |    +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0 (*)
+     |    |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    |    |    +--- com.android.tools.external.com-intellij:intellij-core:26.1.2 (*)
+     |    |    |    +--- com.android.tools.external.org-jetbrains:uast:26.1.2
+     |    |    |    +--- com.android.tools.build:manifest-merger:26.1.2 (*)
+     |    |    |    +--- org.ow2.asm:asm:5.1
+     |    |    |    +--- org.ow2.asm:asm-tree:5.1 (*)
+     |    |    |    +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0 (*)
+     |    |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    |    +--- com.google.guava:guava:22.0 (*)
+     |    |    +--- com.android.tools.external.com-intellij:intellij-core:26.1.2 (*)
+     |    |    +--- com.android.tools.external.org-jetbrains:uast:26.1.2
+     |    |    \--- org.ow2.asm:asm-analysis:5.1
+     |    |         \--- org.ow2.asm:asm-tree:5.1 (*)
+     |    +--- com.android.tools.lint:lint-kotlin:26.1.2 (*)
+     |    +--- com.google.guava:guava:22.0 (*)
+     |    +--- com.android.tools.external.org-jetbrains:uast:26.1.2
+     |    +--- com.android.tools.external.com-intellij:kotlin-compiler:26.1.2
+     |    +--- com.android.tools.build:manifest-merger:26.1.2 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0 (*)
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     +--- com.android.tools.lint:lint-gradle-api:26.1.2
+     |    +--- com.android.tools:sdklib:26.1.2 (*)
+     |    +--- com.android.tools.build:builder-model:3.1.2 (*)
+     |    +--- com.android.tools.build:gradle-api:3.1.2
+     |    |    +--- com.android.tools.build:builder-model:3.1.2 (*)
+     |    |    +--- com.android.tools.build:builder-test-api:3.1.2 (*)
+     |    |    +--- com.google.guava:guava:22.0 (*)
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0 (*)
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+     |    \--- com.google.guava:guava:22.0 (*)
+     +--- org.codehaus.groovy:groovy-all:2.4.12
+     +--- org.jetbrains.kotlin:kotlin-reflect:1.2.0 (*)
+     \--- org.jetbrains.kotlin:kotlin-stdlib-jre8:1.2.0 (*)
+
+protobuf
+No dependencies
+
+protobufToolsLocator_javalite
+\--- com.google.protobuf:protoc-gen-javalite:3.0.0
+
+protobufToolsLocator_protoc
+\--- com.google.protobuf:protoc:3.0.0
+
+provided - Provided dependencies for 'main' sources (deprecated: use 'compileOnly' instead). (n)
+No dependencies
+
+releaseAnnotationProcessor - Classpath for the annotation processor for 'release'. (n)
+No dependencies
+
+releaseAnnotationProcessorClasspath - Resolved configuration for annotation-processor for variant: release
++--- com.google.auto.value:auto-value:1.5.2
++--- com.google.dagger:dagger-android-processor:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.dagger:dagger-android-jarimpl:2.11
+|    +--- com.google.dagger:dagger-android-support-jarimpl:2.11
+|    +--- com.google.googlejavaformat:google-java-format:1.3
+|    |    +--- com.google.guava:guava:19.0 -> 21.0
+|    |    \--- com.google.errorprone:javac:9-dev-r3297-1-shaded
+|    +--- com.google.guava:guava:21.0
+|    \--- com.squareup:javapoet:1.7.0
++--- com.google.dagger:dagger-compiler:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-producers:2.11
+|    |    +--- com.google.dagger:dagger:2.11 (*)
+|    |    +--- com.google.code.findbugs:jsr305:3.0.1
+|    |    +--- com.google.guava:guava:21.0
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    +--- com.google.googlejavaformat:google-java-format:1.3 (*)
+|    +--- com.google.guava:guava:21.0
+|    +--- com.squareup:javapoet:1.7.0
+|    \--- javax.inject:javax.inject:1
+\--- com.github.bumptech.glide:compiler:4.7.1
+     \--- com.github.bumptech.glide:annotations:4.7.1
+
+releaseApi - API dependencies for 'release' sources. (n)
+No dependencies
+
+releaseApiElements - API elements for release (n)
+No dependencies
+
+releaseApk - Apk dependencies for 'release' sources (deprecated: use 'releaseRuntimeOnly' instead). (n)
+No dependencies
+
+releaseBundleElements - Bundle elements for release (n)
+No dependencies
+
+releaseCompile - Compile dependencies for 'release' sources (deprecated: use 'releaseImplementation' instead). (n)
+No dependencies
+
+releaseCompileClasspath - Resolved configuration for compilation for variant: release
++--- javax.annotation:jsr250-api:1.0
++--- com.google.auto.value:auto-value:1.5.2
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking
++--- project :com.android.dialer.callcomposer
++--- project :com.android.dialer.callcomposer.camera.camerafocus
++--- project :com.android.dialer.callcomposer.cameraui
++--- project :com.android.dialer.calldetails
++--- project :com.android.dialer.calllog.ui
++--- project :com.android.dialer.calllogutils
++--- project :com.android.dialer.common
++--- project :com.android.dialer.contactactions
++--- project :com.android.dialer.contactsfragment
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
++--- project :com.android.dialer.postcall
++--- project :com.android.dialer.searchfragment.common
++--- project :com.android.dialer.searchfragment.list
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget
++--- project :com.android.dialershared.bubble
++--- project :com.android.incallui
++--- project :com.android.incallui.answer.impl
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl
++--- project :com.android.incallui.hold
++--- project :com.android.incallui.sessiondata
++--- project :com.android.incallui.speakerbuttonlogic
++--- project :com.android.incallui.telecomeventui
++--- project :com.android.incallui.video.impl
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+
+releaseCompileOnly - Compile only dependencies for 'release' sources. (n)
+No dependencies
+
+releaseImplementation - Implementation only dependencies for 'release' sources. (n)
+No dependencies
+
+releaseMetadataElements - Metadata elements for release (n)
+No dependencies
+
+releaseProtobuf
+No dependencies
+
+releaseProvided - Provided dependencies for 'release' sources (deprecated: use 'releaseCompileOnly' instead). (n)
+No dependencies
+
+releaseRuntimeClasspath - Resolved configuration for runtime for variant: release
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
+|    +--- project :com.android.dialer.theme
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget
+|    |         +--- project :com.android.dialer.assetres
+|    |         \--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.util
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking (*)
++--- project :com.android.dialer.callcomposer
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.callcomposer.cameraui
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.camera.camerafocus
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.cameraui (*)
++--- project :com.android.dialer.calldetails
+|    \--- project :com.android.dialer.calllogutils
+|         +--- project :com.android.dialer.theme
+|         +--- project :com.android.dialer.assetres
+|         +--- project :com.android.dialer.dialpadview
+|         \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllog.ui
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllogutils (*)
++--- project :com.android.dialer.common
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.contactactions
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.contactsfragment
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.postcall
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.searchfragment.common
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.searchfragment.list
+|    +--- project :com.android.dialer.searchfragment.common (*)
+|    \--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util (*)
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget (*)
++--- project :com.android.dialershared.bubble
+|    \--- com.android.support:appcompat-v7:27.1.1 (*)
++--- project :com.android.incallui
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.incallui.incall.impl
+|    |    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.incallui.commontheme
+|    |    \--- project :com.android.incallui.contactgrid
+|    |         \--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.video.protocol
++--- project :com.android.incallui.answer.impl
+|    +--- com.android.support:design:27.1.1 (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl (*)
++--- project :com.android.incallui.hold
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.sessiondata
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.speakerbuttonlogic
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.telecomeventui
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.video.impl
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
+\--- project :com.google.android.libraries.backup
+     \--- com.android.support:support-annotations:27.1.1
+
+releaseRuntimeElements - Runtime elements for release (n)
+No dependencies
+
+releaseRuntimeOnly - Runtime only dependencies for 'release' sources. (n)
+No dependencies
+
+releaseUnitTestAnnotationProcessorClasspath - Resolved configuration for annotation-processor for variant: releaseUnitTest
+No dependencies
+
+releaseUnitTestCompileClasspath - Resolved configuration for compilation for variant: releaseUnitTest
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking
++--- project :com.android.dialer.callcomposer
++--- project :com.android.dialer.callcomposer.camera.camerafocus
++--- project :com.android.dialer.callcomposer.cameraui
++--- project :com.android.dialer.calldetails
++--- project :com.android.dialer.calllog.ui
++--- project :com.android.dialer.calllogutils
++--- project :com.android.dialer.common
++--- project :com.android.dialer.contactactions
++--- project :com.android.dialer.contactsfragment
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
++--- project :com.android.dialer.postcall
++--- project :com.android.dialer.searchfragment.common
++--- project :com.android.dialer.searchfragment.list
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget
++--- project :com.android.dialershared.bubble
++--- project :com.android.incallui
++--- project :com.android.incallui.answer.impl
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl
++--- project :com.android.incallui.hold
++--- project :com.android.incallui.sessiondata
++--- project :com.android.incallui.speakerbuttonlogic
++--- project :com.android.incallui.telecomeventui
++--- project :com.android.incallui.video.impl
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
++--- project :com.google.android.libraries.backup
+\--- junit:junit:4.12
+     \--- org.hamcrest:hamcrest-core:1.3
+
+releaseUnitTestRuntimeClasspath - Resolved configuration for runtime for variant: releaseUnitTest
++--- com.android.support:design:27.1.1
+|    +--- com.android.support:support-v4:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- android.arch.lifecycle:runtime:1.1.0
+|    |    |         +--- android.arch.lifecycle:common:1.1.0
+|    |    |         \--- android.arch.core:common:1.1.0
+|    |    +--- com.android.support:support-media-compat:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-utils:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    +--- com.android.support:support-core-ui:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    |    \--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    \--- com.android.support:support-fragment:27.1.1
+|    |         +--- com.android.support:support-compat:27.1.1 (*)
+|    |         +--- com.android.support:support-core-ui:27.1.1 (*)
+|    |         +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |         +--- com.android.support:support-annotations:27.1.1
+|    |         +--- android.arch.lifecycle:livedata-core:1.1.0
+|    |         |    +--- android.arch.lifecycle:common:1.1.0
+|    |         |    +--- android.arch.core:common:1.1.0
+|    |         |    \--- android.arch.core:runtime:1.1.0
+|    |         |         \--- android.arch.core:common:1.1.0
+|    |         \--- android.arch.lifecycle:viewmodel:1.1.0
+|    +--- com.android.support:appcompat-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-core-utils:27.1.1 (*)
+|    |    +--- com.android.support:support-fragment:27.1.1 (*)
+|    |    +--- com.android.support:support-vector-drawable:27.1.1
+|    |    |    +--- com.android.support:support-annotations:27.1.1
+|    |    |    \--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:animated-vector-drawable:27.1.1
+|    |         +--- com.android.support:support-vector-drawable:27.1.1 (*)
+|    |         \--- com.android.support:support-core-ui:27.1.1 (*)
+|    +--- com.android.support:recyclerview-v7:27.1.1
+|    |    +--- com.android.support:support-annotations:27.1.1
+|    |    +--- com.android.support:support-compat:27.1.1 (*)
+|    |    \--- com.android.support:support-core-ui:27.1.1 (*)
+|    \--- com.android.support:transition:27.1.1
+|         +--- com.android.support:support-annotations:27.1.1
+|         \--- com.android.support:support-compat:27.1.1 (*)
++--- com.android.support:transition:27.1.1 (*)
++--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:cardview-v7:27.1.1
+|    \--- com.android.support:support-annotations:27.1.1
++--- com.android.support:appcompat-v7:27.1.1 (*)
++--- com.android.support:recyclerview-v7:27.1.1 (*)
++--- com.android.support:support-v13:27.1.1
+|    +--- com.android.support:support-annotations:27.1.1
+|    \--- com.android.support:support-v4:27.1.1 (*)
++--- com.android.support:support-annotations:27.1.1
++--- com.android.support:support-dynamic-animation:27.1.1
+|    \--- com.android.support:support-core-utils:27.1.1 (*)
++--- com.google.guava:guava:22.0
+|    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.1
+|    +--- com.google.errorprone:error_prone_annotations:2.0.18 -> 2.1.2
+|    +--- com.google.j2objc:j2objc-annotations:1.1
+|    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
++--- com.google.android.gms:play-services-maps:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1
+|    |    +--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1
+|    |    |    \--- com.android.support:support-v4:26.1.0 -> 27.1.1 (*)
+|    |    \--- com.google.android.gms:play-services-tasks:[15.0.1] -> 15.0.1
+|    |         \--- com.google.android.gms:play-services-basement:[15.0.1] -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.google.android.gms:play-services-location:15.0.1
+|    +--- com.google.android.gms:play-services-base:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    +--- com.google.android.gms:play-services-places-placereport:[15.0.1,16.0.0) -> 15.0.1
+|    |    \--- com.google.android.gms:play-services-basement:[15.0.1,16.0.0) -> 15.0.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:[15.0.1,16.0.0) -> 15.0.1 (*)
++--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- com.googlecode.libphonenumber:geocoder:2.94
+|    +--- com.googlecode.libphonenumber:libphonenumber:8.9.5
+|    \--- com.googlecode.libphonenumber:prefixmapper:2.94
+|         \--- com.googlecode.libphonenumber:libphonenumber:8.9.5
++--- commons-io:commons-io:2.4
++--- com.google.protobuf:protobuf-lite:3.0.1
++--- com.google.android:android:4.1.1.4
+|    +--- commons-logging:commons-logging:1.1.1
+|    +--- org.apache.httpcomponents:httpclient:4.0.1
+|    |    +--- org.apache.httpcomponents:httpcore:4.0.1
+|    |    +--- commons-logging:commons-logging:1.1.1
+|    |    \--- commons-codec:commons-codec:1.3
+|    +--- org.khronos:opengl-api:gl1.1-android-2.1_r1
+|    +--- xerces:xmlParserAPIs:2.6.2
+|    +--- xpp3:xpp3:1.1.4c
+|    \--- org.json:json:20080701
++--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android:2.11
+|    +--- com.google.dagger:dagger:2.11
+|    |    \--- javax.inject:javax.inject:1
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.google.dagger:dagger-android-support:2.11
+|    +--- com.google.dagger:dagger:2.11 (*)
+|    +--- com.google.dagger:dagger-android:2.11 (*)
+|    +--- com.android.support:appcompat-v7:25.0.0 -> 27.1.1 (*)
+|    +--- com.android.support:support-annotations:25.0.0 -> 27.1.1
+|    +--- com.android.support:support-v4:25.0.0 -> 27.1.1 (*)
+|    +--- com.google.code.findbugs:jsr305:3.0.1
+|    \--- javax.inject:javax.inject:1
++--- com.github.bumptech.glide:glide:4.7.1
+|    +--- com.github.bumptech.glide:gifdecoder:4.7.1
+|    |    \--- com.android.support:support-annotations:27.1.1
+|    +--- com.github.bumptech.glide:disklrucache:4.7.1
+|    +--- com.github.bumptech.glide:annotations:4.7.1
+|    \--- com.android.support:support-fragment:27.1.1 (*)
++--- me.leolin:ShortcutBadger:1.1.21
++--- com.android.volley:volley:1.1.0
++--- org.apache.james:apache-mime4j-core:0.8.2
++--- org.apache.james:apache-mime4j-dom:0.8.2
+|    \--- org.apache.james:apache-mime4j-core:0.8.2
++--- io.grpc:grpc-stub:1.12.0
+|    \--- io.grpc:grpc-core:1.12.0
+|         +--- io.grpc:grpc-context:1.12.0
+|         +--- com.google.code.gson:gson:2.7
+|         +--- com.google.guava:guava:20.0 -> 22.0 (*)
+|         +--- com.google.errorprone:error_prone_annotations:2.1.2
+|         +--- com.google.code.findbugs:jsr305:3.0.0 -> 3.0.1
+|         +--- io.opencensus:opencensus-api:0.11.0
+|         \--- io.opencensus:opencensus-contrib-grpc-metrics:0.11.0
+|              \--- io.opencensus:opencensus-api:0.11.0
++--- io.grpc:grpc-okhttp:1.12.0
+|    +--- io.grpc:grpc-core:[1.12.0] -> 1.12.0 (*)
+|    +--- com.squareup.okhttp:okhttp:2.5.0
+|    |    \--- com.squareup.okio:okio:1.6.0 -> 1.13.0
+|    \--- com.squareup.okio:okio:1.13.0
++--- io.grpc:grpc-protobuf-lite:1.12.0
+|    +--- io.grpc:grpc-core:1.12.0 (*)
+|    +--- com.google.protobuf:protobuf-lite:3.0.1
+|    \--- com.google.guava:guava:20.0 -> 22.0 (*)
++--- project :com.android.common
++--- project :com.android.contacts.common
+|    +--- project :com.android.dialer.theme
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.about
++--- project :com.android.dialer.app
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget
+|    |         +--- project :com.android.dialer.assetres
+|    |         \--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.util
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.app.manifests.activities
++--- project :com.android.dialer.app.voicemail.error
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.assetres
++--- project :com.android.dialer.blocking (*)
++--- project :com.android.dialer.callcomposer
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.callcomposer.cameraui
+|    |    +--- project :com.android.dialer.theme
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.dialer.blocking (*)
+|    |    +--- project :com.android.dialer.dialpadview
+|    |    \--- project :com.android.dialer.widget (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.camera.camerafocus
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.callcomposer.cameraui (*)
++--- project :com.android.dialer.calldetails
+|    \--- project :com.android.dialer.calllogutils
+|         +--- project :com.android.dialer.theme
+|         +--- project :com.android.dialer.assetres
+|         +--- project :com.android.dialer.dialpadview
+|         \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllog.ui
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.calllogutils (*)
++--- project :com.android.dialer.common
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.contactactions
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.contactsfragment
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.dialpadview
++--- project :com.android.dialer.enrichedcall.simulator
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.interactions
++--- project :com.android.dialer.main.impl
++--- project :com.android.dialer.notification
++--- project :com.android.dialer.oem
++--- project :com.android.dialer.phonenumberutil
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.postcall
+|    \--- project :com.android.dialer.theme
++--- project :com.android.dialer.searchfragment.common
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.dialer.searchfragment.list
+|    +--- project :com.android.dialer.searchfragment.common (*)
+|    \--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.searchfragment.nearbyplaces
++--- project :com.android.dialer.shortcuts
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    \--- project :com.android.dialer.widget (*)
++--- project :com.android.dialer.speeddial
++--- project :com.android.dialer.util (*)
++--- project :com.android.dialer.theme
++--- project :com.android.dialer.widget (*)
++--- project :com.android.dialershared.bubble
+|    \--- com.android.support:appcompat-v7:27.1.1 (*)
++--- project :com.android.incallui
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.contacts.common (*)
+|    +--- project :com.android.dialer.assetres
+|    +--- project :com.android.dialer.blocking (*)
+|    +--- project :com.android.dialer.dialpadview
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.incallui.incall.impl
+|    |    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    |    +--- project :com.android.dialer.assetres
+|    |    +--- project :com.android.incallui.commontheme
+|    |    \--- project :com.android.incallui.contactgrid
+|    |         \--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.video.protocol
++--- project :com.android.incallui.answer.impl
+|    +--- com.android.support:design:27.1.1 (*)
+|    +--- project :com.android.dialer.theme
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.answer.impl.affordance
++--- project :com.android.incallui.answer.impl.answermethod
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.answer.impl.hint
++--- project :com.android.incallui.audioroute
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.autoresizetext
++--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.contactgrid (*)
++--- project :com.android.incallui.disconnectdialog
++--- project :com.android.incallui.incall.impl (*)
++--- project :com.android.incallui.hold
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.sessiondata
+|    \--- project :com.android.dialer.assetres
++--- project :com.android.incallui.speakerbuttonlogic
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.telecomeventui
+|    \--- project :com.android.dialer.theme
++--- project :com.android.incallui.video.impl
+|    +--- com.android.support:appcompat-v7:27.1.1 (*)
+|    +--- project :com.android.dialer.assetres
+|    \--- project :com.android.incallui.commontheme
++--- project :com.android.incallui.video.protocol
++--- project :com.android.voicemail.impl
++--- project :com.android.voicemail.impl.configui
++--- project :com.google.android.libraries.backup
+|    \--- com.android.support:support-annotations:27.1.1
+\--- junit:junit:4.12
+     \--- org.hamcrest:hamcrest-core:1.3
+
+releaseWearApp - Link to a wear app to embed for object 'release'. (n)
+No dependencies
+
+releaseWearBundling - Resolved Configuration for wear app bundling for variant: release
+No dependencies
+
+runtimeOnly - Runtime only dependencies for 'main' sources. (n)
+No dependencies
+
+testAnnotationProcessor - Classpath for the annotation processor for 'test'. (n)
+No dependencies
+
+testApi - API dependencies for 'test' sources. (n)
+No dependencies
+
+testApk - Apk dependencies for 'test' sources (deprecated: use 'testRuntimeOnly' instead). (n)
+No dependencies
+
+testCompile - Compile dependencies for 'test' sources (deprecated: use 'testImplementation' instead).
+No dependencies
+
+testCompileOnly - Compile only dependencies for 'test' sources. (n)
+No dependencies
+
+testDebugAnnotationProcessor - Classpath for the annotation processor for 'testDebug'. (n)
+No dependencies
+
+testDebugApi - API dependencies for 'testDebug' sources. (n)
+No dependencies
+
+testDebugApk - Apk dependencies for 'testDebug' sources (deprecated: use 'testDebugRuntimeOnly' instead). (n)
+No dependencies
+
+testDebugCompile - Compile dependencies for 'testDebug' sources (deprecated: use 'testDebugImplementation' instead). (n)
+No dependencies
+
+testDebugCompileOnly - Compile only dependencies for 'testDebug' sources. (n)
+No dependencies
+
+testDebugImplementation - Implementation only dependencies for 'testDebug' sources. (n)
+No dependencies
+
+testDebugProtobuf
+No dependencies
+
+testDebugProvided - Provided dependencies for 'testDebug' sources (deprecated: use 'testDebugCompileOnly' instead). (n)
+No dependencies
+
+testDebugRuntimeOnly - Runtime only dependencies for 'testDebug' sources. (n)
+No dependencies
+
+testDebugWearApp - Link to a wear app to embed for object 'testDebug'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for 'test' sources. (n)
+\--- junit:junit:4.12 (n)
+
+testProtobuf
+No dependencies
+
+testProvided - Provided dependencies for 'test' sources (deprecated: use 'testCompileOnly' instead). (n)
+No dependencies
+
+testReleaseAnnotationProcessor - Classpath for the annotation processor for 'testRelease'. (n)
+No dependencies
+
+testReleaseApi - API dependencies for 'testRelease' sources. (n)
+No dependencies
+
+testReleaseApk - Apk dependencies for 'testRelease' sources (deprecated: use 'testReleaseRuntimeOnly' instead). (n)
+No dependencies
+
+testReleaseCompile - Compile dependencies for 'testRelease' sources (deprecated: use 'testReleaseImplementation' instead). (n)
+No dependencies
+
+testReleaseCompileOnly - Compile only dependencies for 'testRelease' sources. (n)
+No dependencies
+
+testReleaseImplementation - Implementation only dependencies for 'testRelease' sources. (n)
+No dependencies
+
+testReleaseProtobuf
+No dependencies
+
+testReleaseProvided - Provided dependencies for 'testRelease' sources (deprecated: use 'testReleaseCompileOnly' instead). (n)
+No dependencies
+
+testReleaseRuntimeOnly - Runtime only dependencies for 'testRelease' sources. (n)
+No dependencies
+
+testReleaseWearApp - Link to a wear app to embed for object 'testRelease'. (n)
+No dependencies
+
+testRuntimeOnly - Runtime only dependencies for 'test' sources. (n)
+No dependencies
+
+testWearApp - Link to a wear app to embed for object 'test'. (n)
+No dependencies
+
+wearApp - Link to a wear app to embed for object 'main'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+(n) - Not resolved (configuration is not meant to be resolved)
+
+BUILD SUCCESSFUL in 2s
+1 actionable task: 1 executed

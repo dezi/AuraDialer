@@ -137,6 +137,11 @@ android {
 }
 
 dependencies {
+
+    //
+    // ./gradlew com.android.dialer:dependencies > dependencies.txt
+    //
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
