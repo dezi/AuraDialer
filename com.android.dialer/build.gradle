@@ -2,6 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.protobuf'
 
 android {
+    signingConfigs {
+        aura_aosp_system_app {
+            keyAlias 'platform'
+            keyPassword 'dummy!'
+            storeFile file('./aura-aosp.jks')
+            storePassword 'dummy!'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId 'com.android.dialer'
@@ -11,26 +19,27 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            signingConfig signingConfigs.aura_aosp_system_app
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.aura_aosp_system_app
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
     productFlavors {
     }
-
     sourceSets {
         main.manifest.srcFile 'src/main/AndroidManifest.xml'
     }
-
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/LICENSE'
@@ -41,7 +50,6 @@ android {
         exclude 'META-INF/notice.txt'
         exclude 'META-INF/ASL2.0'
     }
-
     sourceSets {
         /*
         main.res.srcDirs += ['src/main/assets/product/res']
@@ -102,11 +110,9 @@ android {
         main.res.srcDirs += ['src/main/java/com/android/voicemail/impl/configui/res']
         */
     }
-
     sourceSets {
         main.java.srcDirs += "${protobuf.generatedFilesBaseDir}/main/javalite"
     }
-
     sourceSets {
         main {
             java {
@@ -153,7 +159,7 @@ dependencies {
     implementation 'commons-io:commons-io:2.4'
     compileOnly 'com.google.auto.value:auto-value:1.5.2'
     annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
-    implementation 'com.google.protobuf:protobuf-java:3.5.1'
+    implementation 'com.google.protobuf:protobuf-lite:3.0.1'
     implementation 'com.google.android:android:4.1.1.4'
     implementation 'javax.inject:javax.inject:1'
     implementation 'com.google.dagger:dagger-android:2.11'
@@ -168,7 +174,7 @@ dependencies {
     implementation 'org.apache.james:apache-mime4j-dom:0.8.2'
     implementation 'io.grpc:grpc-stub:1.12.0'
     implementation 'io.grpc:grpc-okhttp:1.12.0'
-    implementation 'io.grpc:grpc-protobuf:1.12.0'
+    implementation 'io.grpc:grpc-protobuf-lite:1.12.0'
     implementation project(':com.android.common')
     implementation project(':com.android.contacts.common')
     implementation project(':com.android.dialer.about')
